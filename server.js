@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3001;
 
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'public'))); // Serve static files
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 const API_KEY = process.env.FOOTBALL_DATA_API_KEY || 'db9d234b98fb448db903370727e3d1dd';
 const API_URL = 'https://api.football-data.org/v4/matches';
